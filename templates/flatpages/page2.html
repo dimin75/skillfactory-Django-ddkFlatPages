@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Page 2{% endblock %}
+
+{% block content %}
+    <p>Это вторая страница, где контент повторяется 2 раза без измненеия content:</p>
+    <p>{{ flatpage.content }}</p>
+    <p>{{ flatpage.content }}</p>
+    <a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}
